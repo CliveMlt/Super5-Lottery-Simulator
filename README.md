@@ -48,11 +48,12 @@ python lottery_sim2.py
 5. **Quit**: Exit the application.
 
 ## Lottery Simulation
-#enerating Super5 Numbers
-If you choose option 1, you will see something like:<br>
+Generating Super5 Numbers
+If you choose option 1, it will generate 5 random Super5 Numbers like the below:<br>
 Super5: [2, 14, 25, 33, 45]
 
 # Running a Simulation
+lottery_sim1 uses executor.map while lottery_sim2 uses executor.submit.<br>
 If you choose option 4, the simulation will run and display the progress:<br>
 ```bash
 Playing Super5...: 100%|██████████████████████████████████████████| 10000000/10000000 [01:00<00:00, 165593.17it/s]
