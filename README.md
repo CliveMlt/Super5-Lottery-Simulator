@@ -53,8 +53,14 @@ If you choose option 1, it will generate 5 random Super5 Numbers like the below:
 Super5: [2, 14, 25, 33, 45]
 
 # Running a Simulation
-lottery_sim1 uses executor.map while lottery_sim2 uses executor.submit.<br>
-If you choose option 4, the simulation will run and display the progress:<br>
+If you choose option 4, the simulation will run and display the progress using a progress bar.<br>
+The simulation uses all available CPU cores to be faster and more efficient. It divides the total number of plays into smaller chunks, and each chunk is processed in parallel by different CPU cores.<br>
+This ensures that the simulation completes in a reasonable time even for a large number of plays.<br>
+
+The simulation can be ran using two methods for parallel processing:<br>
+lottery_sim1.py uses 'executor.map' while lottery_sim2.py uses 'executor.submit'. 
+
+
 ```bash
 Playing Super5...: 100%|██████████████████████████████████████████| 10000000/10000000 [01:00<00:00, 165593.17it/s]
 ```
