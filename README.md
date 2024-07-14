@@ -61,12 +61,12 @@ The simulation can be ran using two methods for parallel processing:<br>
 lottery_sim1.py uses 'executor.map' while lottery_sim2.py uses 'executor.submit'. 
 
 
-```bash
+```python
 Playing Super5...: 100%|██████████████████████████████████████████| 10000000/10000000 [01:00<00:00, 165593.17it/s]
 ```
 
 After completion, the results will be printed:
-```bash
+```ruby
 Super5: [22, 3, 7, 8, 30]    
 0 Matches: 5,471,343 (1 in 2)
 1 Match: 3,505,012 (1 in 3)  
